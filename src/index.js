@@ -1,15 +1,27 @@
 import React from "react";
 import {createRoot} from "react-dom/client";
 import HomePage from "./pages/homePage";
-import sample from './stories/sampleData'
+import sample from './stories/sampleData';
+import MovieDetailsPage from './pages/movieDetailsPage';
 
-const movies = [sample, sample, sample, sample, sample, sample, sample];
+const movie = [sample, sample, sample, sample, sample, sample, sample];
 
 const App = () => {
   return (
-      <HomePage movies={movies} />
+    <MovieDetailsPage movie={sample} images={images} productionCompanies={productionCompanies} />
+    
   );
 };
 
 const rootElement = createRoot( document.getElementById("root") )
 rootElement.render(<App /> );
+
+const images = [
+  "/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
+  "/v1QQKq8M0fWxMgSdGOX1aCv8qMB.jpg",
+  "/2iGN0aKHJYD0xQydlfuCUAcgNbO.jpg",
+  "/rjBwhsOzHKUw2NIOrE7aMqjfe6s.jpg",
+]
+
+const productionCompanies = [
+]

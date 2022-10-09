@@ -4,7 +4,7 @@ import HomePage from "./pages/homePage";
 import sample from './stories/sampleData';
 import MovieDetailsPage from './pages/movieDetailsPage';
 
-const movie = [sample, sample, sample, sample, sample, sample, sample];
+const movies = [sample, sample, sample, sample, sample, sample, sample];
 
 const App = () => {
   return (

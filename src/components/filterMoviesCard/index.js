@@ -18,7 +18,14 @@ const formControl =
     backgroundColor: "rgb(255, 255, 255)"
   };
 
+ 
+
 export default function FilterMoviesCard(props) {
+
+  const handleChange = (e, type, value) => {
+    e.preventDefault()
+    props.onUserInput(type, value)   // NEW
+  }
 
   const genres = [
     {id: 1, name: "Animation"},

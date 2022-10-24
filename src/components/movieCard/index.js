@@ -13,6 +13,7 @@ import IconButton from "@mui/material/IconButton";
 import Grid from "@mui/material/Grid";
 import img from '../../images/film-poster-placeholder.png'
 import Avatar from '@mui/material/Avatar';
+import { Link } from "react-router-dom";
 
 export default function MovieCard(props) {
   const movie = props.movie;
@@ -24,6 +25,7 @@ export default function MovieCard(props) {
   };
 
   return (
+
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
         avatar={
@@ -33,12 +35,14 @@ export default function MovieCard(props) {
             </Avatar>
           ) : null
         }
+        
         title={
           <Typography variant="h5" component="p">
             {movie.title}{" "}
           </Typography>
         }
       />
+      
       <CardMedia
         sx={{ height: 500 }}
         image={
@@ -67,10 +71,13 @@ export default function MovieCard(props) {
       <IconButton aria-label="add to favourites" onClick={handleAddToFavourite}>
         <FavoriteIcon color="primary" fontSize="large" />
     </IconButton>
+    <Link to={`/movies/${movie.id}`}>
         <Button variant="outlined" size="medium" color="primary">
           More Info ...
         </Button>
+        </Link>
       </CardActions>
     </Card>
+    
   );
 }

@@ -6,6 +6,7 @@ import HomePage from "./pages/homePage";
 import MoviePage from "./pages/movieDetailsPage";
 import MovieDetailsPage from './pages/movieDetailsPage'
 import FavouriteMoviesPage from "./pages/favouriteMoviesPage"; // NEW
+import UpcomingMovies from './pages/upcomingMoviesPage';
 import {Link} from 'react-router-dom'
 import MovieReviewPage from "./pages/movieReviewPage";
 
@@ -17,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/reviews/:id" element={<MovieReviewPage />} />
         <Route path="/details/:id" element={<MovieDetailsPage />} />
+        <Route path="/movies/upcoming" element={<UpcomingMovies/>} />
         <Route exact path="/movies/favourites" element={<FavouriteMoviesPage />} />
         <Route path="/movies/:id" element={<MoviePage />} />
         <Route path="/" element={<HomePage />} />

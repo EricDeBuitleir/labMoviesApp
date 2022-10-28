@@ -4,7 +4,7 @@ import React, { useState } from "react";
 export const MoviesContext = React.createContext(null);
 
 const MoviesContextProvider = (props) => {
-  const [favourites, setFavourites] = useState( [] )
+  const [favourites, setFavourites, myReviews, setMyReviews] = useState( [] )
 
   const addToFavourites = (movie) => {
     let newFavourites = [...favourites];
@@ -21,17 +21,24 @@ const MoviesContextProvider = (props) => {
     ) )
   };
 
-  return (
-    <MoviesContext.Provider
-      value={{
-        favourites,
-        addToFavourites,
-        removeFromFavourites
-      }}
-    >
-      {props.children}
-    </MoviesContext.Provider>
-  );
-};
+  
 
-export default MoviesContextProvider;
+    const addReview = (movie, review) => {
+      setMyReviews( {...myReviews, [movie.id]: review } )
+    };
+
+    return (
+      <MoviesContext.Provider
+        value={{
+          favourites,
+          addToFavourites,
+          removeFromFavourites,
+          addReview,
+        }}
+      >
+        {props.children}
+      </MoviesContext.Provider>
+    );
+  };
+  
+  export default MoviesContextProvider;

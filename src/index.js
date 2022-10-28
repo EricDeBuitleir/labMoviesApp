@@ -1,3 +1,4 @@
+import AddMovieReviewPage from './pages/addMovieReviewPage'
 import SiteHeader from './components/siteHeader'
 import React from "react";
 import {createRoot} from "react-dom/client";
@@ -30,6 +31,7 @@ const App = () => {
     <SiteHeader />      {/* New Header  */}
     <MoviesContextProvider>
     <Routes>
+    <Route path="/reviews/form" element={<AddMovieReviewPage/>} />
       <Route path="/reviews/:id" element={<MovieReviewPage />} />
       <Route path="/details/:id" element={<MovieDetailsPage />} />
       <Route path="/movies/upcoming" element={<UpcomingMovies/>} />

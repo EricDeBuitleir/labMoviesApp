@@ -28,6 +28,7 @@ const App = () => {
     <QueryClientProvider client={queryClient}>
     <BrowserRouter>
     <SiteHeader />      {/* New Header  */}
+    <MoviesContextProvider>
     <Routes>
       <Route path="/reviews/:id" element={<MovieReviewPage />} />
       <Route path="/details/:id" element={<MovieDetailsPage />} />
@@ -37,6 +38,7 @@ const App = () => {
       <Route path="/" element={<HomePage />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
+    </MoviesContextProvider>
   </BrowserRouter>
   <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>

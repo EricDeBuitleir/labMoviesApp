@@ -1,3 +1,4 @@
+
 export default {
     adult: false,
     backdrop_path: "/5Iw7zQTHVRBOYpA0V6z0yypOPZh.jpg",
@@ -62,18 +63,6 @@ export default {
         name: "United States of America",
       },
     ],
-    production_countries: [
-      {
-        iso_3166_1: "EU",
-        name: "Lithuania",
-      },
-    ],
-    production_countries: [
-      {
-        iso_3166_1: "EU",
-        name: "France",
-      },
-    ],
     release_date: "2017-12-13",
     revenue: 1332459537,
     runtime: 152,
@@ -90,3 +79,4 @@ export default {
     vote_average: 7,
     vote_count: 9692,
   };
+  

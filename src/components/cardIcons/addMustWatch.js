@@ -3,7 +3,7 @@ import { MoviesContext } from "../../contexts/moviesContext";
 import IconButton from "@mui/material/IconButton";
 import PlaylistAddIcon from '@mui/icons-material/PlaylistAdd';
 
-const MustWatch = ({ movie }) => {
+const MustWatchIcon = ({ movie }) => {
   const context = useContext(MoviesContext);
 
   const handleAddToMustWatch = (e) => {
@@ -18,4 +18,4 @@ const MustWatch = ({ movie }) => {
   );
 };
 
-export default MustWatch;
+export default MustWatchIcon;

@@ -7,7 +7,7 @@ import Spinner from '../components/spinner';
 
 const PopularShows = (props) => {
 
-  const {  data, error, isLoading, isError }  = useQuery('popularShows', getPopularShows)
+  const {  data, error, isLoading, isError }  = useQuery('popular', getPopularShows)
 
   if (isLoading) {
     return <Spinner />
@@ -16,17 +16,17 @@ const PopularShows = (props) => {
   if (isError) {
     return <h1>{error.message}</h1>
   }  
-  const movies = data.results;
+  const tv = data.results;
 
   // Redundant, but necessary to avoid app crashing.
-  const favourites = movies.filter(m => m.favourite)
+  const favourites = tv.filter(m => m.favourite)
   localStorage.setItem('favourites', JSON.stringify(favourites))
 
   
   return (
     <PageTemplate
       title="Popular TV Shows"
-      movies={movies}
+      tv={tv}
     />
   );
 };

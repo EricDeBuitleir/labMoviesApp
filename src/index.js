@@ -9,6 +9,7 @@ import MovieDetailsPage from './pages/movieDetailsPage'
 import FavouriteMoviesPage from "./pages/favouriteMoviesPage"; // NEW
 import UpcomingMovies from './pages/upcomingMoviesPage';
 import PopularMovies from './pages/popularMoviesPage';
+import PopularShows from './pages/popularTVShowsPage';
 import {Link} from 'react-router-dom'
 import MovieReviewPage from "./pages/movieReviewPage";
 import { QueryClientProvider, QueryClient } from "react-query";
@@ -37,7 +38,8 @@ const App = () => {
       <Route path="/reviews/:id" element={<MovieReviewPage />} />
       <Route path="/details/:id" element={<MovieDetailsPage />} />
       <Route path="/movies/upcoming" element={<UpcomingMovies/>} />
-      <Route path="/movies/popular" element={<PopularMovies/>} />
+      <Route path="/movies/popularMovies" element={<PopularMovies/>} />
+      <Route path="/tv/popularShows" element={<PopularShows/>} />
       <Route exact path="/movies/favourites" element={<FavouriteMoviesPage />} />
       <Route path="/movies/:id" element={<MoviePage />} />
       <Route path="/" element={<HomePage />} />

@@ -1,13 +1,13 @@
 import React from "react";
-import PageTemplate from "../components/movieComponents/templateMovieListPage";
-import { getPopularShows} from "../api/tmdb-api";
+import PageTemplate from "../components/tvComponents/templateTVListPage";
+import { getPopularTVs} from "../api/tmdb-api";
 import { useQuery } from 'react-query';
 import Spinner from '../components/spinner';
 
 
-const PopularShows = (props) => {
+const PopularTV = (props) => {
 
-  const {  data, error, isLoading, isError }  = useQuery('popular', getPopularShows)
+  const {  data, error, isLoading, isError }  = useQuery('popular', getPopularTVs)
 
   if (isLoading) {
     return <Spinner />
@@ -30,4 +30,4 @@ const PopularShows = (props) => {
     />
   );
 };
-export default PopularShows;
+export default PopularTV;

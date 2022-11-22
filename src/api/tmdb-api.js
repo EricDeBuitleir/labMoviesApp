@@ -179,7 +179,7 @@ export const getTV = (args) => {
   
   export const getPopularTVs = (up) => {
     return fetch(
-      `https://api.themoviedb.org/3/tv/{tv_id}/similar?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
+      `https://api.themoviedb.org/3/discover/tv?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US&page=1`
     ).then((response) => {
       if (!response.ok) {
         throw new Error(response.json().message);

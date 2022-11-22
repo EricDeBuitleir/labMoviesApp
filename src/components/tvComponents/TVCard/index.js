@@ -64,7 +64,7 @@ export default function TVCard({ TV, action }) {
           <Grid item xs={6}>
             <Typography variant="h6" component="p">
               <CalendarIcon fontSize="small" />
-              {TV.release_date}
+              {TV.first_air_date}
             </Typography>
           </Grid>
           <Grid item xs={6}>

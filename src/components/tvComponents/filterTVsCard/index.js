@@ -11,7 +11,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import img from '../../../images/pexels-dziana-hasanbekava-5480827.jpg'
-import { getGenres } from "../../../api/tmdb-api";
+import { getTVGenres } from "../../../api/tmdb-api";
 import { useQuery } from "react-query";
 import Spinner from '../../spinner'
 
@@ -25,7 +25,7 @@ const formControl =
  
 
   export default function FilterTVsCard(props) {
-    const { data, error, isLoading, isError } = useQuery("genres", getGenres);
+    const { data, error, isLoading, isError } = useQuery("genres", getTVGenres);
   
     if (isLoading) {
       return <Spinner />;

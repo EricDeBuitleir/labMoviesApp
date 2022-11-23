@@ -16,8 +16,8 @@ import Avatar from '@mui/material/Avatar';
 import { Link } from "react-router-dom";
 import { TVsContext } from "../../../contexts/TVsContext";
 
-export default function TVCard({ TV, action }) {
-
+export default function TVCard({ TV, action2 }) {
+  let action = () => true
   const { favourites, addToFavourites } = useContext(TVsContext);
  
    if (favourites.find((id) => id === TV.id)) {

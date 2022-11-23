@@ -26,7 +26,7 @@ const PopularTV = (props) => {
   return (
     <PageTemplate
       title="Popular TV Shows"
-      tv={tv}
+      TVs={tv}
     />
   );
 };

@@ -37,7 +37,7 @@ const App = () => {
     <SiteHeader />      {/* New Header  */}
     <MoviesContextProvider>
     <TVsContextProvider>
-      <ActorsContextProvider>
+    <ActorsContextProvider>
       <Routes>
     <Route path="/reviews/form" element={<AddMovieReviewPage/>} />
       <Route path="/reviews/:id" element={<MovieReviewPage />} />

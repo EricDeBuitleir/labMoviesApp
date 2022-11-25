@@ -25,7 +25,7 @@ const PopularActor = (props) => {
   
   return (
     <PageTemplate
-      title="Popular Actors"
+      name="Popular Actors"
       actors={actor}
     />
   );

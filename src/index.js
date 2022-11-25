@@ -18,6 +18,7 @@ import MoviesContextProvider from "./contexts/moviesContext";
 import TVsContextProvider from './contexts/TVsContext';
 import ActorsContextProvider from './contexts/actorContext';
 import PopularActor from './pages/popularActorPage';
+import ActorDetailsPage from './pages/actorDetailsPage';
 
 
 const queryClient = new QueryClient({
@@ -42,6 +43,7 @@ const App = () => {
     <Route path="/reviews/form" element={<AddMovieReviewPage/>} />
       <Route path="/reviews/:id" element={<MovieReviewPage />} />
       <Route path="/details/:id" element={<MovieDetailsPage />} />
+      <Route path="/actorDetails/:id" element={<ActorDetailsPage />} />
       <Route path="/movies/upcoming" element={<UpcomingMovies/>} />
       <Route path="/movies/popularMovies" element={<PopularMovies/>} />
       <Route path="/tv/popularShows" element={<PopularTV/>} />

@@ -5,6 +5,7 @@ import {createRoot} from "react-dom/client";
 import { BrowserRouter, Route, Navigate, Routes } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import MoviePage from "./pages/movieDetailsPage";
+import ActorPage from "./pages/actorDetailsPage";
 import MovieDetailsPage from './pages/movieDetailsPage'
 import FavouriteMoviesPage from "./pages/favouriteMoviesPage"; // NEW
 import UpcomingMovies from './pages/upcomingMoviesPage';
@@ -43,13 +44,14 @@ const App = () => {
     <Route path="/reviews/form" element={<AddMovieReviewPage/>} />
       <Route path="/reviews/:id" element={<MovieReviewPage />} />
       <Route path="/details/:id" element={<MovieDetailsPage />} />
-      <Route path="/actorDetails/:id" element={<ActorDetailsPage />} />
+      <Route path="/actors/:id" element={<ActorDetailsPage />} />
       <Route path="/movies/upcoming" element={<UpcomingMovies/>} />
       <Route path="/movies/popularMovies" element={<PopularMovies/>} />
       <Route path="/tv/popularShows" element={<PopularTV/>} />
       <Route path="/actor/popularActors" element={<PopularActor/>} />
       <Route exact path="/movies/favourites" element={<FavouriteMoviesPage />} />
       <Route path="/movies/:id" element={<MoviePage />} />
+      <Route path="/actors/:id" element={<ActorPage />} />
       <Route path="/" element={<HomePage />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>

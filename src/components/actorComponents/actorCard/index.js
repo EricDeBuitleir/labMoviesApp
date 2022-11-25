@@ -16,7 +16,7 @@ import Avatar from '@mui/material/Avatar';
 import { Link } from "react-router-dom";
 import { ActorsContext } from "../../../contexts/actorContext";
 
-export default function ActorCard({ actor, action3 }) {
+export default function ActorCard({ actor, action2 }) {
   let action = () => true
 
   const { favourites, addToFavourites } = useContext(ActorsContext);
@@ -65,16 +65,22 @@ export default function ActorCard({ actor, action3 }) {
           <Grid item xs={6}>
             <Typography variant="h6" component="p">
               <CalendarIcon fontSize="small" />
-              {actor.birth_date}
+              {actor.name}
+            </Typography>
+          </Grid>
+          <Grid item xs={6}>
+            <Typography variant="h6" component="p">
+              <CalendarIcon fontSize="small" />
+              {actor.birthday}
             </Typography>
           </Grid>
         </Grid>
       </CardContent>
       <CardActions disableSpacing>
     {action(actor)}
-    <Link to={`/Actors/${actor.id}`}>
+    <Link to={`/actors/${actor.id}`}>
       <Button variant="outlined" size="medium" color="primary">
-        More Info ...
+        More info ...
       </Button>
     </Link>
   </CardActions>

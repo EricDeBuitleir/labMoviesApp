@@ -7,6 +7,7 @@ import HomePage from "./pages/homePage";
 import MoviePage from "./pages/movieDetailsPage";
 import ActorPage from "./pages/actorDetailsPage";
 import MovieDetailsPage from './pages/movieDetailsPage'
+import ActorDetailsPage from './pages/actorDetailsPage'
 import FavouriteMoviesPage from "./pages/favouriteMoviesPage"; // NEW
 import UpcomingMovies from './pages/upcomingMoviesPage';
 import PopularMovies from './pages/popularMoviesPage';
@@ -19,7 +20,7 @@ import MoviesContextProvider from "./contexts/moviesContext";
 import TVsContextProvider from './contexts/TVsContext';
 import ActorsContextProvider from './contexts/actorContext';
 import PopularActor from './pages/popularActorPage';
-import ActorDetailsPage from './pages/actorDetailsPage';
+
 
 
 const queryClient = new QueryClient({

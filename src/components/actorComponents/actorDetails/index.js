@@ -41,16 +41,16 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
         
       </Paper>
       <Paper component="ul" sx={root}>
-        <Chip icon={<AccessTimeIcon />} label={`${actor.runtime} min.`} />
+        <Chip icon={<AccessTimeIcon />} label={`${actor.name} min.`} />
         <Chip
           icon={<MonetizationIcon />}
           label={`${actor.revenue.toLocaleString()}`}
         />
         <Chip
           icon={<StarRate />}
-          label={`${actor.vote_average} (${actor.vote_count}`}
+          label={`${actor.name} (${actor.popularity}`}
         />
-        <Chip label={`Released: ${actor.release_date}`} />
+        <Chip label={`Birthday: ${actor.birthday}`} />
       </Paper>
       <Paper 
         component="ul" 
@@ -59,12 +59,7 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
         <li>
           <Chip label="Production Countries" sx={chip} color="primary" />
         </li>
-        {actor.production_countries.map((c) => (
-          <li key={c.name}>
-            <Chip label={c.name} sx={chip} />
-            
-          </li>
-        ))}
+        
       </Paper>
       <Fab
         color="secondary"

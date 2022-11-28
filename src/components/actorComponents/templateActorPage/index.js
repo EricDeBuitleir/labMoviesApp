@@ -24,7 +24,7 @@ import Spinner from '../../spinner'
   
   return (
     <>
-      <ActorHeader Actor={actor} />
+      <ActorHeader actor={actor} />
 
       <Grid container spacing={5} sx={{ padding: "15px" }}>
         <Grid item xs={3}>
@@ -33,7 +33,7 @@ import Spinner from '../../spinner'
             flexWrap: "wrap",
             justifyContent: "space-around",
           }}>
-            <ImageList 
+            {/* <ImageList 
                 cols={1}>
                 {images.map((image) => (
                     <ImageListItem key={image.file_path} cols={1}>
@@ -43,7 +43,7 @@ import Spinner from '../../spinner'
                     />
                     </ImageListItem>
                 ))}
-            </ImageList>
+            </ImageList> */}
           </div>
         </Grid>
 

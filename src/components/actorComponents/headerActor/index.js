@@ -7,8 +7,8 @@ import Typography from "@mui/material/Typography";
 import HomeIcon from "@mui/icons-material/Home";
 import { useNavigate } from "react-router-dom";
 
-const ActorHeader = (props) => {
-  const actor = props.actor;
+const ActorHeader = ({actor}) => {
+  //const actor = props.actor;
   const navigate = useNavigate();
 
   return (

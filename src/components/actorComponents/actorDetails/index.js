@@ -31,7 +31,7 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
       </Typography>
 
       <Typography variant="h6" component="p">
-        {actor.overview}
+        {actor.biography}
       </Typography>
 
       <Paper 
@@ -42,10 +42,10 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
       </Paper>
       <Paper component="ul" sx={root}>
         <Chip icon={<AccessTimeIcon />} label={`${actor.name} min.`} />
-        <Chip
+        {/* <Chip
           icon={<MonetizationIcon />}
           label={`${actor.revenue.toLocaleString()}`}
-        />
+        /> */}
         <Chip
           icon={<StarRate />}
           label={`${actor.name} (${actor.popularity}`}

@@ -34,10 +34,7 @@ const formControl =
     if (isError) {
       return <h1>{error.message}</h1>;
     }
-    const genres = data.genres;
-    if (genres[0].name !== "All"){
-      genres.unshift({ id: "0", name: "All" });
-    }
+   
   
     const handleChange = (e, type, value) => {
       e.preventDefault();
@@ -48,10 +45,7 @@ const formControl =
       handleChange(e, "name", e.target.value);
     };
   
-    const handleGenreChange = (e) => {
-      handleChange(e, "genre", e.target.value);
-    };
-  
+   
 
   
   

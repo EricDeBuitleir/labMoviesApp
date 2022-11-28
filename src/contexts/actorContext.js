@@ -22,10 +22,6 @@ const ActorsContextProvider = (props) => {
     ) )
   };
 
-    
-  
-
-    
 
     return (
       <ActorsContext.Provider

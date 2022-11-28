@@ -75,21 +75,7 @@ const formControl =
           type="search"
           variant="filled"
         />
-        <FormControl sx={formControl}>
-          <InputLabel id="genre-label">Genre</InputLabel>
-          <Select
-            labelId="genre-label"
-            id="genre-select"
-          >
-            {genres.map((genre) => {
-              return (
-                <MenuItem key={genre.id} value={genre.id}>
-                  {genre.name}
-                </MenuItem>
-              );
-            })}
-          </Select>
-        </FormControl>
+    
       </CardContent>
       <CardMedia
         sx={{ height: 300 }}

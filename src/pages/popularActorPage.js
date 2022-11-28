@@ -3,6 +3,7 @@ import PageTemplate from "../components/actorComponents/templateActorListPage";
 import { getPopularActors} from "../api/tmdb-api";
 import { useQuery } from 'react-query';
 import Spinner from '../components/spinner';
+import AddToFavouritesIcon from '../components/cardIcons/addToFavourites'
 
 
 const PopularActor = (props) => {
@@ -19,14 +20,17 @@ const PopularActor = (props) => {
   const actor = data.results;
 
   // Redundant, but necessary to avoid app crashing.
-  const favourites = actor.filter(m => m.favourite)
-  localStorage.setItem('favourites', JSON.stringify(favourites))
+  const popular = actor.filter(m => m.favourite)
+  localStorage.setItem('popular', JSON.stringify(popular))
 
   
   return (
     <PageTemplate
       name="Popular Actors"
       actors={actor}
+      action={(actor) => {
+        return <AddToFavouritesIcon actor={actor} />
+      }}
     />
   );
 };

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import PageTemplate from "../components/actorComponents/templateactorListPage";
+import PageTemplate from "../components/actorComponents/templateActorListPage";
 import { ActorsContext } from "../contexts/actorContext";
 import { useQueries } from "react-query";
 import { getActor } from "../api/tmdb-api";
@@ -7,7 +7,7 @@ import Spinner from '../components/spinner'
 import RemoveFromFavourites from "../components/cardIcons/removeFromFavourites";
 import WriteReview from "../components/cardIcons/writeReview";
 
-const FavouriteactorsPage = () => {
+const FavouriteActorPage = () => {
   const {favourites: actorIds } = useContext(ActorsContext);
 
 
@@ -36,7 +36,7 @@ const FavouriteactorsPage = () => {
 
   return (
     <PageTemplate
-      title="Favourite actors"
+      name="Favourite actors"
       actors={actors}
       action={(actor) => {
         return (
@@ -50,4 +50,4 @@ const FavouriteactorsPage = () => {
   );
 };
 
-export default FavouriteactorsPage;
+export default FavouriteActorPage;

@@ -5,7 +5,7 @@ import {createRoot} from "react-dom/client";
 import { BrowserRouter, Route, Navigate, Routes } from "react-router-dom";
 import HomePage from "./pages/homePage";
 import MoviePage from "./pages/movieDetailsPage";
-import ActorPage from "./pages/actorDetailsPage";
+import ActorPage from "./pages/actorPage";
 import MovieDetailsPage from './pages/movieDetailsPage'
 import ActorDetailsPage from './pages/actorDetailsPage'
 import FavouriteMoviesPage from "./pages/favouriteMoviesPage"; // NEW
@@ -52,7 +52,7 @@ const App = () => {
       <Route path="/actor/popularActors" element={<PopularActor/>} />
       <Route exact path="/movies/favourites" element={<FavouriteMoviesPage />} />
       <Route path="/movies/:id" element={<MoviePage />} />
-      <Route path="/actors/:id" element={<ActorPage />} />
+      <Route path="/actor/discoverActors" element={<ActorPage />} />
       <Route path="/" element={<HomePage />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>

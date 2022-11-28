@@ -16,6 +16,7 @@ import Avatar from '@mui/material/Avatar';
 import { Link } from "react-router-dom";
 import { ActorsContext } from "../../../contexts/actorContext";
 
+
 export default function ActorCard({ actor, action2 }) {
   let action = () => true
 
@@ -31,7 +32,14 @@ export default function ActorCard({ actor, action2 }) {
      e.preventDefault();
      addToFavourites(actor);
    };
- 
+
+   if (actor.gender === 1){
+      actor.gender = "Female"
+   }
+
+   if (actor.gender === 2){
+    actor.gender = "Male"
+ }
 
   return (
 
@@ -71,7 +79,7 @@ export default function ActorCard({ actor, action2 }) {
           <Grid item xs={6}>
             <Typography variant="h6" component="p">
               <CalendarIcon fontSize="small" />
-              {actor.birthday}
+              {actor.gender}
             </Typography>
           </Grid>
         </Grid>

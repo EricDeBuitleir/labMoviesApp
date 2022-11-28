@@ -8,6 +8,7 @@ const ActorList = ( {actors, action }) => {
       <Actor key={m.id} actor={m} action={action} />
     </Grid>
   ));
+ 
   return actorCards;
 };
 

@@ -222,7 +222,7 @@ export const getTV = (args) => {
   };
   export const getActors = () => {
     return fetch(
-      `https://api.themoviedb.org/3/person/{person_id}?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US`
+      `https://api.themoviedb.org/3/person/popular?api_key=${process.env.REACT_APP_TMDB_KEY}&language=en-US`
       
     ).then((response) => {
       if (!response.ok) {

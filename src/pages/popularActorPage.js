@@ -3,7 +3,7 @@ import PageTemplate from "../components/actorComponents/templateActorListPage";
 import { getPopularActors} from "../api/tmdb-api";
 import { useQuery } from 'react-query';
 import Spinner from '../components/spinner';
-import AddToFavouritesIcon from '../components/cardIcons/addToFavourites'
+import AddToFavouritesIcon from '../components/cardIcons/addToFavouriteActors'
 
 
 const PopularActor = (props) => {

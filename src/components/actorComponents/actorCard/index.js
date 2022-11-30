@@ -79,7 +79,10 @@ export default function ActorCard({ actor, action2 }) {
           </Grid>
          
         </Grid>
+
+        
       </CardContent>
+      
       <CardActions disableSpacing>
     {action(actor)}
     <Link to={`/actors/${actor.id}`}>

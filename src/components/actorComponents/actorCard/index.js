@@ -77,12 +77,7 @@ export default function ActorCard({ actor, action2 }) {
               
             </Typography>
           </Grid>
-          <Grid item xs={6}>
-            <Typography variant="h6" component="p">
-              <CalendarIcon fontSize="small" />
-              {actor.gender}
-            </Typography>
-          </Grid>
+         
         </Grid>
       </CardContent>
       <CardActions disableSpacing>

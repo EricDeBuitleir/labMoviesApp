@@ -8,6 +8,10 @@ import NavigationIcon from "@mui/icons-material/Navigation";
 import Fab from "@mui/material/Fab";
 import Typography from "@mui/material/Typography";
 import Drawer from "@mui/material/Drawer";
+import { Cake, CakeRounded, CatchingPokemon, LocalHospitalRounded, Person } from "@mui/icons-material";
+import { Global } from "@emotion/react";
+import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 
 
 
@@ -41,23 +45,27 @@ const ActorDetails = ({ actor }) => {  // Don't miss this!
         
       </Paper>
       <Paper component="ul" sx={root}>
-        <Chip icon={<AccessTimeIcon />} label={`${actor.name} min.`} />
-        {/* <Chip
-          icon={<MonetizationIcon />}
-          label={`${actor.revenue.toLocaleString()}`}
-        /> */}
+        <Chip icon={<Person/>} label={` Known for: ${actor.known_for_department} `} />
         <Chip
-          icon={<StarRate />}
-          label={`${actor.name} (${actor.popularity}`}
+          icon={<CakeRounded />}
+          label={`Birthday: ${actor.birthday}`}
         />
-        <Chip label={`Birthday: ${actor.birthday}`} />
+        <Chip 
+       icon={<LocalHospitalRounded />}
+       label={`Born in: ${actor.place_of_birth}`}
+       />
       </Paper>
       <Paper 
+      
         component="ul" 
         sx={root}
       >
         <li>
-          <Chip label="Production Countries" sx={chip} color="primary" />
+          <Link to={`/actor/latestActors`}>
+          <Button variant="outlined" size="small" color="primary">
+          <Chip label={`Known as: ${actor.also_known_as}`}sx={chip} color="primary" />
+          </Button>
+      </Link>
         </li>
         
       </Paper>

@@ -9,8 +9,7 @@ function ActorListPageTemplate({ actors, name, action }) {
   // const [genreFilter, setGenreFilter] = useState("0");
   // const genreId = Number(genreFilter);
 
-  let displayedActors = actors
-    .filter((m) => {
+  let displayedActors = actors.filter((m) => {
       return m.name.toLowerCase().search(nameFilter.toLowerCase()) !== -1;
     })
   //   .filter((m) => {

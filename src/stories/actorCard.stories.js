@@ -2,7 +2,7 @@ import React from "react";
 import ActorCard from "../components/actorComponents/actorCard";
 import Sampleactor from "./sampleData";
 import { MemoryRouter } from "react-router";
-import ActorsContextProvider from "../contexts/actorsContext";
+import ActorsContextProvider from "../contexts/actorContext";
 import { action } from "@storybook/addon-actions";
 import AddToFavouritesIcon from "../components/cardIcons/addToFavourites";
 

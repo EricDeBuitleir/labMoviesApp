@@ -5,7 +5,7 @@ import { MemoryRouter } from "react-router";
 import { action } from "@storybook/addon-actions";
 import AddToFavouritesIcon from "../components/cardIcons/addToFavourites";
 import Grid from "@mui/material/Grid";
-import ActorsContextProvider from "../contexts/actorsContext";
+import ActorsContextProvider from "../contexts/actorContext";
 
 export default {
   title: "Home Page/Actor",

@@ -2,7 +2,7 @@ import React from "react";
 import ActorDetails from "../components/actorComponents/actorDetails";
 import SampleActor from "./sampleData";
 import { MemoryRouter } from "react-router";
-import ActorsContextProvider from "../contexts/actorsContext";
+import ActorsContextProvider from "../contexts/actorContext";
 
 export default {
   title: "Actor Details Page/actorDetails",

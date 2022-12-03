@@ -1,5 +1,5 @@
 import React from "react";
-import ActorHeader from "../components/actorComponents/headeractor";
+import ActorHeader from "../components/actorComponents/headerActor";
 import SampleActor from "./sampleData";
 import { MemoryRouter } from "react-router";
 import { action } from "@storybook/addon-actions";

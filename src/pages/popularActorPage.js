@@ -28,7 +28,7 @@ const PopularActor = (props) => {
     <PageTemplate
       name="Popular Actors"
       actors={actor}
-      action={(actor) => {
+      action={actor => {
         return <AddToFavouritesIcon actor={actor} />
       }}
     />

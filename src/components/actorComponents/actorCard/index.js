@@ -56,6 +56,7 @@ export default function ActorCard({ actor, action2 }) {
         name={
           <Typography variant="h5" component="p">
             {actor.name}{" "}
+            
           </Typography>
         }
       />
@@ -74,7 +75,8 @@ export default function ActorCard({ actor, action2 }) {
             <Typography variant="h6" component="p">
               <CalendarIcon fontSize="small" />
               {actor.name}
-              
+
+             
             </Typography>
           </Grid>
          
@@ -88,6 +90,7 @@ export default function ActorCard({ actor, action2 }) {
     <Link to={`/actors/${actor.id}`}>
       <Button variant="outlined" size="medium" color="primary">
         More info ...
+
       </Button>
     </Link>
   </CardActions>

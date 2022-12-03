@@ -21,10 +21,17 @@ Name: [Eric Butler]
 ### New Features.
 
 [ Provide a bullet-point list of the __new features__ you added to the Movies Fan app.] 
- 
++ UI - New Views / pages (3+)
++ List View (Popular Movies, Popular Actors, Popular TV shows)
++ Routing - New Routes
++ At least one additional parameterized URL - Actor Bio
++ Another data entity type: added both Actor and TV series data entity types
 + Extensive data hyperlinking (More info button on popular movies links to actor bio page )
 + Data model - Full Caching support
-+ Another data entity type: added both Actor and TV series data entity types
++ Favourite Actors - Attempted
++ Storybook support - Attempted
+
+
 
 
 ## Setup requirements.

@@ -8,7 +8,7 @@ Name: [Eric Butler]
 
 [ Provide a bullet-point list of the new pages you added to the Movies Fan add (include modifications to existing pages).]
 
-e.g.
+
 
 + List of Popular Movies (Shows page 2 as it's similar list to "Discover Actors")
 + List of Popular TV Shows
@@ -35,7 +35,7 @@ e.g.
 
 [ List the __additional__ TMDB endpoints used, giving the description and pathname for each one.] 
 
-e.g.
+
 
 + /movies/{movie_id}/popular - A list of popular movies
 + /discover/tv? - A list of tv. 
@@ -54,7 +54,7 @@ e.g.
 
 [ Insert a screenshot from the Storybook UI, and highlight the stories that relate to your __new/modified components__ - see the example screenshot below.] .......
 
-e.g.
+
 
 ![](./images/stories.png)
 
@@ -82,7 +82,7 @@ e.g.
 
 [ List the __new routes__ supported by your app and state the associated page.]
 
-e.g. 
+
 + /actors/:id - shows details about a particular actor.
 + /movies/popularMovies - displays a list of popular movies.
 + /tv/popularShows - displays a list of popular tv shows.

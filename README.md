@@ -1,6 +1,6 @@
 # Web App Dev 2 - Assignment 1 - ReactJS app.
 
-Name: [Eric Butler]
+Name: Eric Butler - 20094078
 
 ## Overview.
 

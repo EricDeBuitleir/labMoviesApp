@@ -1,91 +1,102 @@
-# moviesapp-ci-2021
+# Web App Dev 2 - Assignment 1 - ReactJS app.
+
+Name: [Eric Butler]
+
+## Overview.
+
+### New Pages.
+
+[ Provide a bullet-point list of the new pages you added to the Movies Fan add (include modifications to existing pages).]
+
+e.g.
+
++ List of Popular Movies (Shows page 2 as it's similar list to "Discover Actors")
++ List of Popular TV Shows
++ Popular Actors
++ Actor bio
++ Favourite Actors (page works but not usable due to like button not showing on popular actor's page)
++ (Modified) Site Header - Changed "Home" to "Movies Home"
+
+
+### New Features.
+
+[ Provide a bullet-point list of the __new features__ you added to the Movies Fan app.] 
+ 
++ Extensive data hyperlinking (More info button on popular movies links to actor bio page )
++ Data model - Full Caching support
++ Another data entity type: added both Actor and TV series data entity types
+
+
+## Setup requirements.
+
+[ Outline any non-standard setup steps necessary to run your app locally after cloning the repo.]
+
+## TMDB endpoints.
+
+[ List the __additional__ TMDB endpoints used, giving the description and pathname for each one.] 
+
+e.g.
+
++ /movies/{movie_id}/popular - A list of popular movies
++ /discover/tv? - A list of tv. 
++ genre/tv/list? - Genres for tv shows. 
++ /tv/{tv_id}/images? TV Images.
++ /discover/tv? Popular TV shows.
++ /person/popular - A list of popular actors.
++ /person/${id} - Get Actor.
++ /person/popular - Get Actors.
++ /person/{person_id} - Get Actor .
+
+
+## App Design.
+
+### Component catalogue.
+
+[ Insert a screenshot from the Storybook UI, and highlight the stories that relate to your __new/modified components__ - see the example screenshot below.] .......
+
+e.g.
+
+![](./images/stories.png)
+
+### UI Design.
+
+[ Insert screenshots of the __new app pages__ you developed (including modified existing pages), Have an appropriate caption for each one (see example below).
+
+![ ](./images/popularMovies.png)
+
+>Shows detailed information on popular movies. Clicking the 'Heart' adds movie to favourite.
+
+![ ](./images/popularTV.png)
+
+>Shows detailed information on popular movies. Static page as "More Info" doesn't function
+
+![ ](./images/popularActor.png)
+
+>Shows detailed information on popular actors. Clicking the "More info" button will take you to a page to see details about the actor.
+
+![ ](./images/actorBio.png)
+
+>Shows detailed information on the actor such as birthday, know for, and where they were born.
+
+### Routing.
+
+[ List the __new routes__ supported by your app and state the associated page.]
+
+e.g. 
++ /actors/:id - shows details about a particular actor.
++ /movies/popularMovies - displays a list of popular movies.
++ /tv/popularShows - displays a list of popular tv shows.
++ /actor/popularActors - displays a list of popular actors.
++ /actor/favourites - displays a list of favourite actors.
++ /actor/latestActors - displays a list of latest actor.
 
 
 
-## Getting started
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+[If relevant, state what aspects of your app are protected/private (i.e. require authentication) and what is public.]
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+N/A
 
-## Add your files
+## Independent learning (If relevant).
 
-- [ ] [Create](https://gitlab.com/-/experiment/new_project_readme_content:66f52974c694a0a5196c76dfd303a95f?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://gitlab.com/-/experiment/new_project_readme_content:66f52974c694a0a5196c76dfd303a95f?https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://gitlab.com/-/experiment/new_project_readme_content:66f52974c694a0a5196c76dfd303a95f?https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/oconnordiarmuid/moviesapp-ci-2021.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.com/-/experiment/new_project_readme_content:66f52974c694a0a5196c76dfd303a95f?https://docs.gitlab.com/ee/user/project/integrations/)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://gitlab.com/-/experiment/new_project_readme_content:66f52974c694a0a5196c76dfd303a95f?https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://gitlab.com/-/experiment/new_project_readme_content:66f52974c694a0a5196c76dfd303a95f?https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://gitlab.com/-/experiment/new_project_readme_content:66f52974c694a0a5196c76dfd303a95f?https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Automatically merge when pipeline succeeds](https://gitlab.com/-/experiment/new_project_readme_content:66f52974c694a0a5196c76dfd303a95f?https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://gitlab.com/-/experiment/new_project_readme_content:66f52974c694a0a5196c76dfd303a95f?https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://gitlab.com/-/experiment/new_project_readme_content:66f52974c694a0a5196c76dfd303a95f?https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://gitlab.com/-/experiment/new_project_readme_content:66f52974c694a0a5196c76dfd303a95f?https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://gitlab.com/-/experiment/new_project_readme_content:66f52974c694a0a5196c76dfd303a95f?https://docs.gitlab.com/ee/user/clusters/agent/)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://gitlab.com/-/experiment/new_project_readme_content:66f52974c694a0a5196c76dfd303a95f?https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
-
+N/A
